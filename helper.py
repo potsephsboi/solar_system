@@ -6,8 +6,11 @@ from PIL import Image
 
 
 pygame.init()
-WIDTH = 600
-HEIGHT = 600
+WIDTH = 1000
+HEIGHT = 1000
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+FPS = 35
 
 class Planet:
     Planets = []
@@ -32,7 +35,21 @@ def init_planets():
         (int(Image.open('../planets_animation/planets/sun.png').width), int(Image.open('../planets_animation/planets/sun.png').height))
         )
 
-    Planet('mercury', pygame.image.load('../planets_animation/planets/mercury.png'), 5, 15, 0, [WIDTH/2, 150],
+    Planet('mercury', pygame.image.load('../planets_animation/planets/mercury.png'), 8, 25, 0, [WIDTH/2, 400],
         (int(Image.open('../planets_animation/planets/mercury.png').width), int(Image.open('../planets_animation/planets/mercury.png').height))
         )
+
+    Planet('venus', pygame.image.load('../planets_animation/planets/venus.png'), 6, 23, 0, [WIDTH/2, 340],
+        (int(Image.open('../planets_animation/planets/venus.png').width), int(Image.open('../planets_animation/planets/venus.png').height))
+        )
+
+    Planet('earth', pygame.image.load('../planets_animation/planets/earth.png'), 3.5, 22, 0, [WIDTH/2, 270],
+        (int(Image.open('../planets_animation/planets/earth.png').width), int(Image.open('../planets_animation/planets/earth.png').height))
+        )
+
+    Planet('mars', pygame.image.load('../planets_animation/planets/mars.png'), 3, 20, 0, [WIDTH/2, 210],
+        (int(Image.open('../planets_animation/planets/mars.png').width), int(Image.open('../planets_animation/planets/mars.png').height))
+        )
+
+    
 
