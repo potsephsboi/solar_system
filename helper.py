@@ -43,11 +43,11 @@ def init_planets():
         (int(Image.open('../planets_animation/planets/venus.png').width), int(Image.open('../planets_animation/planets/venus.png').height))
         )
 
-    Planet('earth', pygame.image.load('../planets_animation/planets/earth.png'), 3.5, 22, 0, [WIDTH/2, 270],
+    Planet('earth', pygame.image.load('../planets_animation/planets/earth.png'), 3.2, 22, 0, [WIDTH/2, 270],
         (int(Image.open('../planets_animation/planets/earth.png').width), int(Image.open('../planets_animation/planets/earth.png').height))
         )
 
-    Planet('mars', pygame.image.load('../planets_animation/planets/mars.png'), 3, 20, 0, [WIDTH/2, 210],
+    Planet('mars', pygame.image.load('../planets_animation/planets/mars.png'), 2.8, 20, 0, [WIDTH/2, 210],
         (int(Image.open('../planets_animation/planets/mars.png').width), int(Image.open('../planets_animation/planets/mars.png').height))
         )
 
